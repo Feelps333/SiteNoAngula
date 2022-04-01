@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,400&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-image: url(../../../assets/img/fundo.png);
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+}
+
+/* ################## Inicio Menu ################### */
+.cabecalho {
+  padding: 20px;
+}
+.posicao-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-grid {
+  width: 1000px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+.menu a {
+  color: white;
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+.menu a:hover {
+  color: white;
+  background-color: #ff1547;
+  transition: all 0.5s linear;
+  border-radius: 3%;
+}
+.barras {
+  width: 30px;
+  display: none;
+}
+/* ################## Fim Menu ################### */
+
+/* ################## Inicio Banner ################### */
+.banner {
+  background-image: linear-gradient(45deg, #ff164b, #ff1547, #090447, #000);
+  width: auto;
+  height: auto;
+  min-height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carrosel-center {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carrosel {
+  margin: 5px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carrosel img {
+  max-width: 1000px;
+  width: 100vw;
+  height: auto;
+  border-radius: 2px;
+}
+/* ################## Fim Banner ################### */
+
+/* ################## Inicio Secao Sobre ################### */
+
+.secao-sobre {
+  width: auto;
+  height: 800px;
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.conteudo-sobre {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.categorias img {
+  margin: 5px;
+  width: 400px;
+  min-width: 350px;
+  border-radius: 2%;
+  box-shadow: 0px 0px 10px #737373, 0px 0px 10px #737373;
+}
+.categorias img:hover {
+  width: 450px;
+  transition: all 0.5s linear;
+}
+.categorias a {
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* ################## Fim Secao Sobre ################### */
+
+/* ################## Inicio News ################### */
+
+.news {
+  background-image: linear-gradient(45deg, #ff164b, #ff1547, #090447, #000);
+  height: 100%;
+  width: 100%;
+  background-repeat: none;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.noticias {
+  width: 16%;
+  font-size: 1rem;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+}
+.noticias:hover {
+  background-color: #090447;
+  border-radius: 1.5%;
+  transition: all 0.5s linear;
+}
+.noticias h2 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+/* ################## Fim News ################### */
+
+/* ################## Inicio Rodape ################### */
+
+.rodape {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+.links {
+  color: white;
+}
+.links h2 {
+  font-size: 24px;
+  padding: 5px;
+  text-transform: uppercase;
+  text-align: left;
+}
+.links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  text-align: center;
+}
+.links-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+.logo-rodape {
+  width: 200px;
+  height: 60px;
+  margin-top: 30px;
+}
+.sociais h2 {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.sociais form {
+  font-size: 14px;
+  display: flex;
+  margin-bottom: 8px;
+}
+.sociais input[type="email"] {
+  height: 37px;
+  width: 195px;
+}
+.sociais input[type="email"]::placeholder {
+  color: #737373;
+  font-weight: bold;
+}
+a button {
+  width: 156px;
+  height: 37px;
+  color: white;
+  background-image: linear-gradient(90deg, #ff164b, #ff1547, #090447);
+  border: none;
+  font-size: 18px;
+}
+.siga-nos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.siga-nos h2 {
+  color: white;
+}
+.siga-nos img {
+  width: 50px;
+  display: inline-block;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ################## Fim Rodape ################### */
+
+@media screen and (max-width: 1100px) {
+  .cabecalho {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container-grid {
+    width: auto;
+  }
+  .menu a {
+    font-size: 20px;
+  }
+  .logo {
+    width: 200px;
+  }
+  .secao-sobre {
+    height: 500px;
+    width: 100%;
+  }
+  .conteudo-sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .categorias img {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+  }
+  .categorias h2 {
+    font-size: 20px;
+  }
+  .news {
+    width: 100%;
+    height: 500px;
+  }
+  .noticias h2 {
+    font-size: 20px;
+  }
+  .noticias p {
+    font-size: 13px;
+  }
+  .logo-rodape {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .barras {
+    display: inline-block;
+    background-color: #ff164b;
+    width: 40px;
+  }
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 250px;
+    position: absolute;
+    top: 0;
+    height: auto;
+    background-color: #ff164b;
+  }
+  .menu a {
+    text-align: center;
+    padding: 15px;
+  }
+  .menu-ativo {
+    display: flex;
+    position: absolute;
+  }
+  .posicionamento-header {
+    position: relative;
+  }
+  .secao-sobre {
+    width: 100%;
+    height: auto;
+  }
+  .conteudo-sobre {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .categorias {
+    margin: 15px;
+  }
+  .categorias h2 {
+    text-align: center;
+  }
+  .categorias img {
+    width: 100%;
+    min-width: 200px;
+  }
+  .news {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .rodape {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .links-footer {
+    width: 200px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .links {
+    width: 100%;
+    margin: 20px;
+  }
+  .logo-rodape {
+    display: none;
+  }
+  .sociais {
+    flex-direction: column;
+    align-items: center;
+  }
+  .siga-nos {
+    margin: 10px;
+  }
+}

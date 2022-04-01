@@ -1,0 +1,199 @@
+<body onload="renderizarNoticias()">
+  <header class="cabecalho">
+    <!-- Incio de Menu -->
+    <div class="posicao-center">
+      <div class="container-grid posicionamento-header">
+        <a href="index.html"
+          ><img class="logo" src="../../../assets/img/logo.png" alt="logo"
+        /></a>
+        <nav id="menu" class="menu">
+          <a href="">News</a>
+          <a href="">Season</a>
+          <a href="">Horários</a>
+          <a href="login.html">Cadrastro</a>
+        </nav>
+        <a href="#" id="barras"
+          ><img class="barras" src="../../../assets/img/menu.png" alt="menu"
+        /></a>
+      </div>
+    </div>
+  </header>
+  <!-- Fim De Menu -->
+  <!-- Inicio Do Banner -->
+
+  <!-- <section class="banner">
+    <div class="container-grid posicao-texto">
+      <div class="texto-banner">
+        <h1>Seasons terão inicio em 2022</h1>
+        <p>Não perca essa oportunidade</p>
+        <a href="login.html">Inscreva-se</a>
+      </div>
+    </div>
+  </section> -->
+  <section class="banner">
+    <div class="carrosel-center">
+      <div id="carrosel" class="carrosel">
+        <img src="../../../assets/img/formula-1.jpg" alt="Banner f1" />
+        <img src="../../../assets/img/nba-2k22.jpg" alt="Banner nba" />
+        <img src="../../../assets/img/fifa-2022.jpg" alt="Banner fifa" />
+      </div>
+    </div>
+  </section>
+  <!-- Fim Do banner -->
+  <!-- Incio conteudo -->
+  <section class="secao-sobre">
+    <div class="conteudo-sobre">
+      <div class="categorias">
+        <a href="">
+          <h2>Categoria S</h2>
+          <img src="../../../assets/img/categoria-s.jpg" alt="categoria s"
+        /></a>
+      </div>
+      <div class="categorias">
+        <a href=""
+          ><h2>Categoria A</h2>
+          <img src="../../../assets/img/categoria-a.jpg" alt="categoria a"
+        /></a>
+      </div>
+      <div class="categorias">
+        <a href=""
+          ><h2>Categoria B</h2>
+          <img src="../../../assets/img/categoria-b.jpg" alt="categoria b"
+        /></a>
+      </div>
+    </div>
+  </section>
+  <!-- fim conteudo-->
+  <!-- Inicio noticias -->
+  <div id="espaco-noticias" class="news">
+    <!-- <div class="noticias">
+      <h2>New NBA 2k22</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Exercitationem commodi nemo beatae est ratione cupiditate assumenda,
+        nobis modi voluptatibus cumque. Culpa repellat saepe omnis hic
+        doloremque vel pariatur sequi ullam!
+      </p>
+    </div>
+    <div class="noticias">
+      <h2>New Formula 1</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Exercitationem commodi nemo beatae est ratione cupiditate assumenda,
+        nobis modi voluptatibus cumque. Culpa repellat saepe omnis hic
+        doloremque vel pariatur sequi ullam!
+      </p>
+    </div>
+    <div class="noticias">
+      <h2>New FIFA 2022</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Exercitationem commodi nemo beatae est ratione cupiditate assumenda,
+        nobis modi voluptatibus cumque. Culpa repellat saepe omnis hic
+        doloremque vel pariatur sequi ullam!
+      </p>
+    </div>
+    <div class="noticias">
+      <h2>New Forza 5</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Exercitationem commodi nemo beatae est ratione cupiditate assumenda,
+        nobis modi voluptatibus cumque. Culpa repellat saepe omnis hic
+        doloremque vel pariatur sequi ullam!
+      </p>
+    </div>
+    <div class="noticias">
+      <h2>New WWE 2k22</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Exercitationem commodi nemo beatae est ratione cupiditate assumenda,
+        nobis modi voluptatibus cumque. Culpa repellat saepe omnis hic
+        doloremque vel pariatur sequi ullam!
+      </p>
+    </div>
+    <div class="noticias">
+      <h2>New NFL 2k22</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Exercitationem commodi nemo beatae est ratione cupiditate assumenda,
+        nobis modi voluptatibus cumque. Culpa repellat saepe omnis hic
+        doloremque vel pariatur sequi ullam!
+      </p>
+    </div> -->
+  </div>
+  <!-- Fim noticias -->
+  <!-- Inicio footer -->
+  <footer class="footer">
+    <!-- Div Main -->
+    <div class="rodape container">
+      <!-- Div dos Links -->
+      <div class="links-footer">
+        <!-- Div links 1 -->
+        <div class="links">
+          <h2>Links Úteis</h2>
+          <ul>
+            <li><a href="#">Regras de utilizacao</a></li>
+            <li><a href="#">Suporte</a></li>
+            <li><a href="#">Central de Ajuda</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </div>
+        <div class="links">
+          <h2>Paginas</h2>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Season</a></li>
+            <li><a href="#">Horarios</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Login/Cadastro</a></li>
+          </ul>
+        </div>
+      </div>
+      <img
+        class="logo-rodape"
+        src="../../../assets/img/logo.png"
+        alt="logo rodape"
+      />
+      <div class="sociais">
+        <h2>Venha participa você tambem!</h2>
+        <form action="">
+          <input id="campo-email" type="email" placeholder="E-mail" required />
+          <a href="login.html">
+            <button onclick="enviarEmail">Cadastrar</button></a
+          >
+        </form>
+        <div class="siga-nos">
+          <h2>Siga-nos em:</h2>
+          <a href="#"
+            ><img
+              src="../../../assets/img/instagram.png"
+              alt="logo do instagram"
+          /></a>
+          <a href="#"
+            ><img src="../../../assets/img/facebook.png" alt="logo do Facebook"
+          /></a>
+          <a href="#"
+            ><img src="../../../assets/img/youtube.png" alt="logo do youtube"
+          /></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- <script>
+    let menu = document.getElementById('menu')
+
+    function mostrarMenu() {
+      if (menu.style.display != 'flex') {
+        menu.style.display = 'flex'
+      } else {
+        menu.style.display = 'none'
+      }
+    }
+  </script>-->
+  <script src="../../js/script.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
+</body>
