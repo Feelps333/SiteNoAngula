@@ -66,14 +66,9 @@
   <!-- fim conteudo-->
   <!-- Inicio noticias -->
   <div id="espaco-noticias" class="news">
-    <div class="noticias">
-      <h2>New NBA 2k22</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-        commodi nemo beatae est ratione cupiditate assumenda, nobis modi
-        voluptatibus cumque. Culpa repellat saepe omnis hic doloremque vel
-        pariatur sequi ullam!
-      </p>
+    <div *ngFor="let noticias of listaNoticias" class="noticias">
+      <h2>{{ noticias.titulo }}</h2>
+      <p>{{ noticias.news }}</p>
     </div>
     <div class="noticias">
       <h2>New Formula 1</h2>
@@ -121,7 +116,7 @@
       </p>
     </div>
   </div>
-  <!-- Fim noticias -->
+  <!--  Fim noticias -->
   <!-- Inicio footer -->
   <footer class="footer">
     <!-- Div Main -->

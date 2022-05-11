@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
+import { Noticias } from 'src/app/models/noticias';
+import { NoticiasService } from 'src/app/services/noticias.service';
 
 @Component({
   selector: 'app-home',
@@ -8,9 +10,12 @@ import * as $ from 'jquery';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private noticiaService: NoticiasService) { }
+
+  listaNoticias = [] as Noticias[]
 
   ngOnInit(): void {
+    this.carregarNoticias()
     $(document).ready(function () {})
 
 $('#carrosel img:eq(0)').addClass('banner-ativo').show()
@@ -33,5 +38,13 @@ function slide() {
 $('#barras').click(function () {
   $('#menu').toggleClass('menu-ativo')
 })
+  }
+  carregarNoticias() {
+    this.noticiaService.getNoticias().subscribe(
+      (noticiasRecebidas: Noticias[]) => {
+        this.listaNoticias = noticiasRecebidas;
+        console.log(this.listaNoticias);
+      }
+    )
   }
 }
