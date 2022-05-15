@@ -8,6 +8,7 @@
         id="email"
         placeholder="Ex.: email@email.com"
         [(ngModel)]="loginModel.email"
+        formControlName="email"
       />
     </div>
 
@@ -19,6 +20,7 @@
         id="senha"
         placeholder="Sua senha aqui..."
         [(ngModel)]="loginModel.password"
+        formControlName="senha"
       />
     </div>
     <input id="botao-enviar" type="submit" value="Fazer Login" />

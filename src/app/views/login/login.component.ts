@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { User } from 'src/app/models/user';
 import { LoginService } from 'src/app/services/login.service';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms'
 
 @Component({
   selector: 'app-login',
@@ -10,7 +11,14 @@ import { LoginService } from 'src/app/services/login.service';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private loginService: LoginService, private router: Router) { }
+  formLogin: FormGroup
+
+  constructor(private loginService: LoginService, private router: Router, private formBuilder: FormBuilder) {
+    this.formLogin = this.formBuilder.group({
+      email: ['email@email.com', [Validators.email, Validators.required]],
+      senha: ['', [Validators.required, Validators.minLength(6)]]
+    })
+   }
 
   ngOnInit(): void {
   }
